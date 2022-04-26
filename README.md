@@ -9,7 +9,7 @@ Carnet: CH160423
 
 Nota: Los archivos de los ejercicios se encuentran en su respectiva rama dentro de este repositorio.
 
-#### Rama SQLite: CRUD con tabla personas usando SQLite.
+#### Rama SQLiteApp: CRUD con tabla personas usando SQLite.
 
 #### Rama ContentProvider: adición de formulario para agregar estudiantes a la base.
 
