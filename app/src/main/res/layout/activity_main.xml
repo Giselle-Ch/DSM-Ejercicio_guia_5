@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:letterSpacing=".3"
+            android:text="@string/titulo"
+            android:textAlignment="center"
+            android:textColor="#020202"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginVertical="5dp"
+            android:hint="Código"
+            android:linksClickable="false"
+            android:paddingHorizontal="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#989393" />
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginVertical="5dp"
+            android:hint="Nombre"
+            android:paddingHorizontal="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#989393" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etEdad"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="2"
+                android:hint="Edad"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#989393" />
+
+            <EditText
+                android:id="@+id/etTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:hint="Télefono"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#989393" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:text="@string/txtOpciones"
+            android:textColor="#989393"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAlta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#C1BDBD"
+                android:drawableTop="@mipmap/subir"
+                android:drawableTint="#000000"
+                android:onClick="alta"
+                android:paddingTop="5dp"
+                android:text="@string/btnalta"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btnEditar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#C1BDBD"
+                android:drawableTop="@mipmap/editar"
+                android:drawableTint="#000000"
+                android:onClick="modificacion"
+                android:paddingTop="5dp"
+                android:text="@string/btneditar"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btnBaja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#C1BDBD"
+                android:drawableTop="@mipmap/eliminar"
+                android:drawableTint="#000000"
+                android:onClick="bajaporcodigo"
+                android:paddingTop="5dp"
+                android:text="@string/btnbaja"
+                android:textColor="#000000" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:text="@string/txtConsulta"
+            android:textColor="#989393"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnConsultaCodigo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#C1BDBD"
+                android:onClick="consutlaporcodigo"
+                android:text="@string/btncodigo"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btnConsultaDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#C1BDBD"
+                android:onClick="consultapornombre"
+                android:text="@string/btnnombre"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SQLite</string>
+    <string name="titulo">Agenda</string>
+    <string name="txtOpciones">Opciones:</string>
+    <string name="txtConsulta">Consultar por:</string>
+    <string name="btnalta">Alta</string>
+    <string name="btneditar">Editar</string>
+    <string name="btnbaja">Baja por código</string>
+    <string name="btncodigo">Código</string>
+    <string name="btnnombre">Nombre</string>
+</resources>
